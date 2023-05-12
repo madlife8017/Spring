@@ -66,6 +66,8 @@ public class ResponseController {
 		System.out.println("/login: GET 요청 발생!");
 		return "response/res-redirect-form";
 	}
+	//그냥 처음 왔을 땐 기본 get으로 옴
+	//근데 정보가 묻으면 이제 포스트로 던짐
 	
 	@PostMapping("/login")
 	public String login(@RequestParam("userId") String id,
