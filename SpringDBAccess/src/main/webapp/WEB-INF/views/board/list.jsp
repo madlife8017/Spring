@@ -20,15 +20,15 @@
             <th>비고</th>
         </tr>
         
-        <c:forEach var="article" items="${bList}">
+        <c:forEach var="article" items="${bList}" varStatus="status">
             <tr>
-                <td>${article.boardNo}</td>
+                <td>${status.count}</td>
                 <td>
                     <a href="<c:url value='/board/content?boardNo=${article.boardNo}'/>">${article.title}</a>
                 </td>
                 <td>${article.writer}</td>
                 <td>
-                    <a href="#">[삭제]</a>
+                    <a href="<c:url value='/board/delete?boardNo=${article.boardNo}'/>">[삭제]</a>
                 </td>
             </tr>
         </c:forEach>
@@ -36,7 +36,7 @@
     </table>
 
     
-    <a href="<c:url value='/board/write' />">게시물 작성하기</a>
+    <a href="<c:url value='/board/write'/>">게시물 작성하기</a>
 
 </body>
 </html>

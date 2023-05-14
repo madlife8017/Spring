@@ -26,6 +26,7 @@ import lombok.ToString;
 @Getter @Setter @ToString
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class ScoreVO {
 	
 	private int stuId;
@@ -36,6 +37,7 @@ public class ScoreVO {
 	private int total;
 	private double average;
 	
+
 	//총점, 평균을 구하는 메서드
 	public void calcData() {
 		
@@ -52,4 +54,5 @@ public class ScoreVO {
 		return "score/write-result";
 		
 	}
+	
 }
