@@ -10,20 +10,27 @@
 
 	<h2>${stu.stuName}학생의 성적 정보 조회</h2>
 	<p>
-	
-		#국어 : ${stu.kor}<br>
-		#국어 : ${stu.eng}<br>
-		#국어 : ${stu.math}<br>
-		#국어 : ${stu.total}<br>
-		#국어 : ${stu.average}<br>
-		
-		
-	
+		# 국어: ${stu.kor} <br>
+		# 영어: ${stu.eng} <br>
+		# 수학: ${stu.math} <br>
+		# 총점: ${stu.total} <br>
+		# 평균: ${stu.average}
 	</p>
 	
-	<a href="${pageContext.request.contextPath}/score/search">점수 개별조회</a>
-	
-	
+	<a href="${pageContext.request.contextPath}/score/search">점수 개별 조회</a>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

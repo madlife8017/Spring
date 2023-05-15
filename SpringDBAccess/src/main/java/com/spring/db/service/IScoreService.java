@@ -17,7 +17,19 @@ public interface IScoreService {
 	
 	//점수 개별 조회 기능
 	ScoreVO selectOne(int num);
-
-
-
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,21 +9,37 @@
 <body>
 
 	<form action="${pageContext.request.contextPath}/score/selectOne">
-	<p>
-	
-		#조회할 학번 : <input type="text" name="stuId" size="5">
-		<input type="submit" value="확인">
-		
-	
-	</p>
-	
-	
-	
-	
+		<p>
+			# 조회할 학번: <input type="text" name="stuId" size="5">
+			<input type="submit" value="확인">
+		</p>
 	</form>
+	
 	<p style="color: red;">
-	${msg}
+		${msg}
 	</p>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
