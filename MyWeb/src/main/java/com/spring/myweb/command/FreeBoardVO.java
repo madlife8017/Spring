@@ -7,16 +7,15 @@ import lombok.Setter;
 import lombok.ToString;
 
 /*
- 	CREATE TABLE feeboard(
-			bno INT primary key auto_increment,
-		    title varchar(300) NOT null,
-		    writer varchar(50) not null,
-		    content varchar(3000) not null,
-		    reg_date datetime default current_timestamp,
-		    update_date datetime default Null
-		    
-		); */
-
+ CREATE TABLE freeboard(
+	bno INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(300) NOT NULL,
+    writer VARCHAR(50) NOT NULL,
+    content VARCHAR(3000) NOT NULL,
+    reg_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    update_date DATETIME DEFAULT NULL
+);
+ */
 
 @Getter
 @Setter
@@ -28,7 +27,27 @@ public class FreeBoardVO {
 	private String writer;
 	private String content;
 	private LocalDateTime regDate;
-	private LocalDateTime updateDate;	
-
+	private LocalDateTime updateDate;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
