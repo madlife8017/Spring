@@ -75,19 +75,19 @@ public class FreeBoardControllerTest {
 		System.out.println("viewName: " + viewPage);
 	}
 	
-	@Test
-	@DisplayName("3번 글 상세 보기 요청을 넣으면 "
-			+ "컨트롤러는 DB에서 가지고 온 글 객체를 model에 담아서 jsp로 이동시킬 것이다.")
-	// /freeboard/content -> get
-	void testContent() throws Exception {
-		ModelAndView mv = mockMvc.perform(
-					MockMvcRequestBuilders.get("/freeboard/content")
-					.param("bno", "3")
-				).andReturn().getModelAndView();
-		System.out.println("Model: " + mv.getModelMap());
-		assertEquals("freeboard/freeDetail", mv.getViewName());
-	}
-	
+//	@Test
+//	@DisplayName("3번 글 상세 보기 요청을 넣으면 "
+//			+ "컨트롤러는 DB에서 가지고 온 글 객체를 model에 담아서 jsp로 이동시킬 것이다.")
+//	// /freeboard/content -> get
+//	void testContent() throws Exception {
+//		ModelAndView mv = mockMvc.perform(
+//					MockMvcRequestBuilders.get("/freeboard/content/{bno}")
+//					
+//		.andReturn().getModelAndView();
+//		System.out.println("Model: " + mv.getModelMap());
+//		assertEquals("freeboard/freeDetail", mv.getViewName());
+//	}
+//	
 	@Test
 	@DisplayName("3번글의 제목과 내용을 수정하는 요청을 post방식으로 전송하면 수정이 진행되고, "
 			+ "수정된 글의 상세보기 페이지로 이동할 것이다.")

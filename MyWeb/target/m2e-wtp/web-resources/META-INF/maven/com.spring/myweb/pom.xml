@@ -88,6 +88,14 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!--spring-security-web -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>5.3.13.RELEASE</version>
+		</dependency>
+
+
 		<!-- @Inject -->
 		<dependency>
 			<groupId>javax.inject</groupId>
@@ -153,8 +161,8 @@
 			<version>1.4.7</version>
 		</dependency>
 
-		<!-- 간단한 설정을 통해 메일 라이브러리 사용할수있도록 도와주는 spring-context-support 
-		메일, 캐시메모리, 스케쥴링 ui 관련 다양한 기능있음.-->
+		<!-- 간단한 설정을 통해 메일 라이브러리 사용할수있도록 도와주는 spring-context-support 메일, 캐시메모리, 
+			스케쥴링 ui 관련 다양한 기능있음. -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
