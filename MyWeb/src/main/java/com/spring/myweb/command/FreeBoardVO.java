@@ -28,6 +28,7 @@ public class FreeBoardVO {
 	private String content;
 	private LocalDateTime regDate;
 	private LocalDateTime updateDate;
+	private int replyCnt;
 
 }
 

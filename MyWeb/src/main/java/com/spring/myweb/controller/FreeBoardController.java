@@ -28,9 +28,7 @@ public class FreeBoardController {
 	@GetMapping("/freeList")
 	public void freeList(PageVO vo, Model model) {
 		
-		PageCreator pc = new PageCreator(vo, service.getTotal(vo));
-		
-		log.info(pc.toString());
+		PageCreator pc = new PageCreator(vo, service.getTotal(vo));		
 		
 		model.addAttribute("boardList", service.getList(vo));
 		model.addAttribute("pc", pc);

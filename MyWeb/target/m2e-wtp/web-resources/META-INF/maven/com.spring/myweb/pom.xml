@@ -45,6 +45,22 @@
 			<version>${org.aspectj-version}</version>
 		</dependency>
 
+		<!--서블릿 3.0 이상 사용 가능한 파일 업로드 API fileupload -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.3</version>
+		</dependency>
+
+		<!-- commons-io : 파일은 읽고 쓸수있게 하는 기능을 모아놓은 라이브러리-->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+
+
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -87,14 +103,6 @@
 			</exclusions>
 			<scope>runtime</scope>
 		</dependency>
-
-		<!--spring-security-web -->
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-web</artifactId>
-			<version>5.3.13.RELEASE</version>
-		</dependency>
-
 
 		<!-- @Inject -->
 		<dependency>
@@ -154,23 +162,6 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- 자바에서 mail을 보내기 위해 필요로 하는 라이브러리 -->
-		<dependency>
-			<groupId>javax.mail</groupId>
-			<artifactId>mail</artifactId>
-			<version>1.4.7</version>
-		</dependency>
-
-		<!-- 간단한 설정을 통해 메일 라이브러리 사용할수있도록 도와주는 spring-context-support 메일, 캐시메모리, 
-			스케쥴링 ui 관련 다양한 기능있음. -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context-support</artifactId>
-			<version>${org.springframework-version}</version>
-		</dependency>
-
-
-
 		<!-- spring-jdbc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -219,6 +210,37 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.14.2</version>
 		</dependency>
+
+		<!-- LocalDateTime 객체를 JSON으로 표현할 수 있게 해주는 라이브러리 -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-jsr310</artifactId>
+			<version>2.14.2</version>
+		</dependency>
+
+
+		<!-- java에서 mail을 보내기 위해 필요로 하는 라이브러리 -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>
+
+		<!-- 간단한 설정을 통해 메일 라이브러리를 사용할 수 있도록 도와주는 spring-context-support 메일 뿐만 아니라, 
+			캐시메모리, 스케쥴링 UI와 관련된 다양한 부가기능들을 지원하는 라이브러리 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
+		<!-- spring-security-web -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>5.3.13.RELEASE</version>
+		</dependency>
+
 
 
 
